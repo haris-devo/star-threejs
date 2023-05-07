@@ -1,3 +1,4 @@
+
 import * as THREE from "https://cdn.skypack.dev/three@0.136.0";
 import {OrbitControls} from "https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls";
 
@@ -7,14 +8,10 @@ scene.background = new THREE.Color(0x160016);
 
 // set up the camera
 let camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 1, 1000);
-camera.position.set(0, 3, 21);
+camera.position.set(0, 4, 21);
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize(innerWidth, innerHeight);
-
-// select the div with class name "hello" and append the renderer's dom element to it
-let helloDiv = document.querySelector("#word");
-helloDiv.appendChild(renderer.domElement);
-
+document.body.appendChild(renderer.domElement);
 window.addEventListener("resize", event => {
   camera.aspect = innerWidth / innerHeight;
   camera.updateProjectionMatrix();
@@ -119,3 +116,6 @@ renderer.setAnimationLoop(() => {
   p.rotation.y = t * 0.05;
   renderer.render(scene, camera);
 });
+
+
+
