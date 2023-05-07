@@ -1,0 +1,24 @@
+@import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+#word {
+    font-family: Megrim, cursive;
+    font-size: 20vh;
+    position: absolute;
+    margin: 10;
+    bottom: 0;
+    color: #fc0;
+    -webkit-text-stroke: 0.15vh #c0f;
+}
+
+/* start of scroll html  */
+
+.hello {
+    height: 50vh !important;
+    width: 100vw !important;
+}
